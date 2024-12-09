@@ -18,11 +18,11 @@ function Navbar() {
                     </div>
                 </div>
                 <div className='flex gap-3 items-center'>
-                    <Link to={'/register'}><button onClick={(() => {
+                    {/* <Link to={'/register'}><button onClick={(() => {
                         window.scrollTo({
                             top: 51
                         })
-                    })} className='text-custom-orange text-sm font-bold xl:text-lg'>Kirish</button></Link>
+                    })} className='text-custom-orange text-sm font-bold xl:text-lg'>Kirish</button></Link> */}
                     <Link to={'/register'}><button onClick={(() => {
                         window.scrollTo({
                             top: 51
