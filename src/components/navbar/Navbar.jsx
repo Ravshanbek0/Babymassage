@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
     const container_style = "container m-auto h-auto"
@@ -9,12 +9,11 @@ function Navbar() {
                 <div className='flex items-center'>
                     <Link to={'/'} ><div className='text-custom-blue text-xl xl:text-4xl font-bold'>Logo</div></Link>
                     <div className='text-base font-semibold xl:flex gap-10 items-center ml-28 hidden'>
-                        <li className='cursor-pointer'>Bosh sahifa</li>
-                        <li className='opacity-60 cursor-pointer'>Qabul</li>
-                        <li className='opacity-60 cursor-pointer'>Biz haqimizda</li>
-                        <li className='opacity-60 cursor-pointer'>Bog’lanish
-                        </li>
-                        <li className='opacity-60 cursor-pointer'>Barchasi</li>
+                        <NavLink className='cursor-pointer opacity-60' to={'/'}>Bosh sahifa</NavLink>
+                        <NavLink className='cursor-pointer opacity-60' to={'/register'}>Qabul</NavLink>
+                        <NavLink className='cursor-pointer opacity-60 no-active' to={'/'} >Biz haqimizda</NavLink>
+                        <NavLink className='cursor-pointer opacity-60 no-active' to={'/'}>Bog’lanish</NavLink>
+                        <NavLink className='cursor-pointer opacity-60 no-active' to={'/'}>Barchasi</NavLink>
                     </div>
                 </div>
                 <div className='flex gap-3 items-center'>

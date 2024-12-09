@@ -37,6 +37,12 @@
 .home-height{
     height: 1080px;
 }
+.active{
+    opacity: 1;
+}
+.no-active{
+    opacity: 0.6;
+}
 @media  (max-width:1024px) {
     .find-course{
         box-shadow: 0px 0px 24px 0px #00546729;
